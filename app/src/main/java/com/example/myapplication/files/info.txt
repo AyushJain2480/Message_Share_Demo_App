@@ -1,0 +1,82 @@
+TODO: Adding RecyclerView and CardView
+
+ Steps to implement RecyclerView
+
+Step1 : XML layouts
+       - Add RecyclerView
+       - Design the layout for each item in the list
+Step2 : Prepare the Data model
+Step3 : Create Custom Adapter class
+Step4 : Finally link Custom Adapter with the RecyclerView
+
+For this video steps are
+1 Add RecylerView to
+     -activity_hobbies.xml
+2 Create a list item layout
+     -list_item.xml
+       > Use CardView as root layout
+3 Prepare the data model
+     the data that is being changed throughout the recyclerView
+     is hobbies i.e title
+     I have the list of hobbies so there should be some medium from where we get the list of hobbies
+     for that we need to prepare the supplier
+     in Model.kt
+4 Creating the custom adapter class HobbiesAdapter
+
+ adapter - Helps to bind the data to the UI
+         - Or attach models to the recyclerView
+
+Data Source        Adapter              UI Component
+(ArrayList,     (Acts as bridge)        (ListView , Spinner,
+HashMap.        Converts data           GridView etc)
+Sqlite etc)     item to view item       View Items is displayed
+                so it can be displayed  in LastView etc.
+                in UI component
+
+5 Link HobbiesAdapter with the recycler view
+
+
+TODO Doing null checks by using
+
+null pointer exception will crash our app so to avoid it we use null safety operators
+safe call             ?.
+safe call with    let ?.let{}
+
+val bundle : Bundle? = intent.extras
+
+not null assertion operator
+val msg = bundle!!.getString("user Message")
+
+null!!.getString
+
+val msg = bundle?.getString("user")
+
+null?.{
+
+}
+
+bundle?.{
+val msg = bundle.getString("user Message")
+}
+
+TODO How to use Object Declaration in Android
+     How to use Companion Object  in  Android
+     NOTE : The above two are similar to static in JAVA
+
+     object Value{
+        val pi = 3.142
+     }
+     Value.pi
+
+     class Value{
+     companion object{
+     val pi = 3.142
+     }
+     }
+     Value.pi
+
+-> An object decelaration inside a class is marked with companion keyword
+-> Companion object is initialized when corresponding class is loaded
+-> Object decelarations are initialized lazily when accessed
+
+for the android oreo onward we have round icon launcher and for new we have icon launcher

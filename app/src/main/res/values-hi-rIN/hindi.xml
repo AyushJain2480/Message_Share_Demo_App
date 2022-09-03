@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="btn_show_toast">Toast dikhao</string>
+    <string name="btn_was_clicked">button click hua he</string>
+    <string name="enter_your_message">kirpya message dale</string>
+    <string name="send_data_to_next_activity">data ko next activity me bheje</string>
+    <string name="share_to_other_apps">apps share kare</string>
+    <string name="recycler_view_demo">Recycler View Demo</string>
+    <string name="app_name">MsgShareApp</string>
+    <string name="dummy">dummy</string>
+</resources>
